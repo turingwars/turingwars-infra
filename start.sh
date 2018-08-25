@@ -1,4 +1,4 @@
-#!/bin/sh -xe
+#!/bin/sh -e
 
 get_latest_release() {
     curl https://api.github.com/repos/turingwars/turingwars/releases/latest | grep tag_name | cut -f4 '-d"'
