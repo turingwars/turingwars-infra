@@ -5,7 +5,7 @@ services:
     build:
       context: web
     ports:
-      - "3000:$TURINGWARS_PORT"
+      - "$TURINGWARS_PORT:3000"
     links:
       - db
     volumes:
