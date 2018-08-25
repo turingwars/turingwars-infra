@@ -5,7 +5,7 @@ services:
     build:
       context: web
     ports:
-      - "3000:3000"
+      - "3000:$TURINGWARS_PORT"
     links:
       - db
     volumes:
@@ -14,9 +14,9 @@ services:
     image: "mariadb:10.3"
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
-      MYSQL_USER: $MYSQL_USER
-      MYSQL_PASSWORD: $MYSQL_PASSWORD
-      MYSQL_DATABASE: $MYSQL_DATABASE
+      MYSQL_ROOT_PASSWORD: $TURINGWARS_DB_ROOT_PASSWORD
+      MYSQL_USER: $TURINGWARS_DB_USER
+      MYSQL_PASSWORD: $TURINGWARS_DB_PASSWORD
+      MYSQL_DATABASE: $TURINGWARS_DB_DATABASE
     volumes:
       - "$TURINGWARS_DATA:/var/lib/mysql"
