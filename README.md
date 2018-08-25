@@ -3,8 +3,7 @@
 ## Get started
 
 ```
-cp .env.example .env
-. .env
+. ./env.example
 ./start.sh
 ```
 

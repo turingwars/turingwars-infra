@@ -6,7 +6,7 @@
         "username": "example",
         "password": "example",
         "database": "example",
-        "logging": true,
+        "logging": false,
         "synchronize": true
     }
 }

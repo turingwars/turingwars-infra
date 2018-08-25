@@ -37,4 +37,5 @@ else
     load_from_github
 fi
 
+docker-compose build
 docker-compose up $args
