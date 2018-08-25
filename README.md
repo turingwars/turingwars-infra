@@ -1,9 +1,10 @@
 # Docker-based TuringWars infrastructure
 
-**WIP: TODO next: load mysql creds securely**
+## Get started
 
-To start the server, run:
 ```
+cp .env.example .env
+. .env
 ./start.sh
 ```
 
@@ -14,3 +15,9 @@ Use this command instead if you want to run the code from a local clone of the [
 ```
 ./start.sh --source path/to/local/turingwars
 ```
+
+## Configuration
+
+Clone the turingwars configuration `turingwars.conf.json` to some othe place outside this repo. Update the values in there.
+
+See all available configuration variables in `.env.example`. Make sure all of those are defined when running any of the scripts in this directory. Also, make sure that the mysql password matches that defined in `turingwars.conf.json`.
