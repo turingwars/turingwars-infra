@@ -1,4 +1,7 @@
 {
+    "game": {
+        "maxProgramSize": 40
+    },
     "db": {
         "type": "mysql",
         "host": "db",
