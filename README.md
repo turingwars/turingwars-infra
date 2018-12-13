@@ -1,6 +1,6 @@
 # Docker-based TuringWars infrastructure
 
-## Get started
+## Get started
 
 ```
 . ./env.example
